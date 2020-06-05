@@ -104,26 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/Martino/miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/Martino/miniconda/etc/profile.d/conda.sh" ]; then
-        . "/Users/Martino/miniconda/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/Martino/miniconda/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# opam configuration
-test -r /Users/Martino/.opam/opam-init/init.zsh && . /Users/Martino/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-alias python=/usr/local/bin/python3
-export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
-#
 # for the pywal dynamic theme
 cat ~/.cache/wal/sequences
 clear
